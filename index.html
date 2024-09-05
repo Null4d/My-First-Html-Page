@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
 </head>
 
 <body>
@@ -43,7 +45,7 @@
     <!-- end header -->
 
     <section class="first-page">
-        <div class="main-title">
+        <div class="main-title" data-aos="fade-up" data-aos-duration="3000">
             <div class="main-text">
                 <h1>You Are Locked In!</h1>
                 <p>VIEW OUR ROOMS</p>
@@ -54,7 +56,7 @@
 
     <section class="featured-rooms">
         <h2>Featured Rooms</h2>
-        <div class="room-container">
+        <div class="room-container"  data-aos="fade-up" data-aos-duration="1000">
             <div class="room-card">
                 <div class="room-info">
                     <div class="locks">
@@ -626,5 +628,10 @@
 
 
 </body>
-
+<script src="aos.js"></script>
+<script>
+    AOS.init({
+      easing: 'fade-up'
+    });
+  </script>
 </html>
